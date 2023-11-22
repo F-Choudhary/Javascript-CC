@@ -36,3 +36,27 @@ console.log(typeof anotherId);
 console.log(typeof outsideTemp); // object types
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// ----------------------Memories-------------------------
+
+// Stack (Primitive)  and Heap (Non-primtive)
+// stack
+let myIgUserId = "fkhruddinn"
+let anotherName = myIgUserId
+anotherName = 'hello'
+console.log(myIgUserId);
+console.log(anotherName);
+
+// stack and heap in scene
+let userOne = {
+    email : "fk@gmail.com",
+    upi : "fk@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "fakhrud33@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// stack copy value its not its original value but make copy of it
+// in heap it call by reference so its gets change
