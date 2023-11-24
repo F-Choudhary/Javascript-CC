@@ -3,6 +3,8 @@
 const myArr = [0, 1, 2, 3, 4, 5]
 const myHeors = ["shaktiman", "naagraj"]
 
+console.log(myArr.length);
+
 const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr[1]);
 
@@ -39,5 +41,5 @@ console.log("B ", myArr);
 
 const myn2 = myArr.splice(1, 3) // it change original array till range inclue last index too
 console.log("C ", myArr);
+console.log(myn2.splice(2,0,4)); // adding elem to particular index at index 2 add 4 , 0 is no deletion
 console.log(myn2);
-
