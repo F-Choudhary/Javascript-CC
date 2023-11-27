@@ -63,6 +63,48 @@ function loginUserMessage(username = "sam"){ // loginUserMessage(username){  } <
 // console.log(loginUserMessage("hitesh"))
 console.log(loginUserMessage()) // bydefault it will sam
 
+// -----------------------------------------------
+
+function calculateCartPrice(...num1){   // in function its rest operator(...)
+    return num1
+}
+// it will bundle in array
+console.log(calculateCartPrice(200,122,1211)); // it will print array [200,122,1211]
+
+// function calculateCartPrice(val1, val2, ...num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(200, 400, 500, 2000)) // here it will assign 200, 400 to val1 and val2 and rest will be in array [500, 2000]
 
 
+const user = {
+    username: "hitesh",
+    price: 199
+}
 
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    // make sure what are you passing in keys
+}
+
+handleObject(user)
+
+// we can directly pass object
+
+handleObject(
+    {
+        username: "hitesh",
+        price: 199
+    }
+)
+
+// we can also pass array
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000]));
