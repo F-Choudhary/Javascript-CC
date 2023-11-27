@@ -60,3 +60,35 @@ const users = [
 // console.log(Object.entries(tinderUser));
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+// objects desctructuring
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor} = course
+const {courseInstructor: instructor} = course
+// above both are same jst making short in second line
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// api and JSON 
+// its similar to object or array , {} or [] or [{},{}]
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
