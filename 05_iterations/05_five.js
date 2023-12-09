@@ -44,4 +44,8 @@ const myCoding = [
 myCoding.forEach( (item) => {
     
     console.log(item.languageName);
+    // console.log(Object.entries(item));
+    // console.log(Object.keys(item));
+    // console.log(Object.values(item));
+
 } )
